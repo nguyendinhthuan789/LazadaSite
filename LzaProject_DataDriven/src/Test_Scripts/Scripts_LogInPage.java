@@ -23,7 +23,7 @@ ExcelHandle obj;
 	public void Testcase001_LogInWrong_UserName()throws Exception{
 		//Start Object
 		ObjLogInPage = new Object_LogInPage(driver);	
-		
+		ExcelHandle WriExl= new ExcelHandle();
 		//Click Login
 		ObjLogInPage.Click_LogIn_Label();
 		
@@ -46,10 +46,21 @@ ExcelHandle obj;
 		
 		//Verify Login wrong username (email)
 		Object_LogInPage ObjLogin=new Object_LogInPage(driver);
-		Assert.assertTrue(ObjLogin.setLogIn_Wrong_UserName().contains("Tên đăng nhập hoặc mật khẩu không hợp lệ"));
+			
+		//Assert.assertTrue(ObjLogin.setLogIn_Wrong_UserName().contains("Tên đăng nhập hoặc mật khẩu không hợp lệ"));
+		//WriExl.setCellData("LogIn", 5, 1,"FAILED");
 		
-		ExcelHandle WriExl= new ExcelHandle();
-		WriExl.setCellData("LogIn", 5, 1,"FAILED");
+		
+		//String Expected="Tên đăng nhập hoặc mật khẩu không hợp lệ";
+		
+		switch (ObjLogin.setLogIn_Wrong_UserName()) {
+		case "Tên đăng nhập hoặc mật khẩu không hợp lệ": 		
+			WriExl.setCellData("LogIn", 5, 1,"PASS");
+			break;
+		default:
+			WriExl.setCellData("LogIn", 5, 1,"NOT START");
+			break;
+		}	
 	}
 	
 		//Login Wrong PassWord
