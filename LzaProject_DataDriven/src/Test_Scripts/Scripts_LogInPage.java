@@ -50,12 +50,9 @@ ExcelHandle obj;
 		//Assert.assertTrue(ObjLogin.setLogIn_Wrong_UserName().contains("Tên đăng nhập hoặc mật khẩu không hợp lệ"));
 		//WriExl.setCellData("LogIn", 5, 1,"FAILED");
 		
-		
-		//String Expected="Tên đăng nhập hoặc mật khẩu không hợp lệ";
-		
 		switch (ObjLogin.setLogIn_Wrong_UserName()) {
 		case "Tên đăng nhập hoặc mật khẩu không hợp lệ": 		
-			WriExl.setCellData("LogIn", 5, 1,"PASS");
+			WriExl.setCellData("LogIn", 5, 1,"FAILED");
 			break;
 		default:
 			WriExl.setCellData("LogIn", 5, 1,"NOT START");
