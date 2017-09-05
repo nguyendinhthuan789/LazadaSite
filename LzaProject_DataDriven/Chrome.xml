@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LzaProject" parallel="tests">
+
+	<test name="SmokeTest - chrome">
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="appURL" value="https://www.lazada.vn"/>
+        <parameter name="version" value="54.0.1"/>
+        <parameter name="os" value="WIN10"/>
+        <classes>
+  			<!-- <class name="Test_Scripts.Scripts_RegisterPage"/> -->
+  			<!-- <class name="Test_Scripts.Scripts_LogInPage"/> --> 
+  			<!-- <class name="Test_Scripts.Scripts_SearchPage"/> -->
+  			<!-- <class name="Test_Scripts.Scripts_AddToCartPage"/> -->
+  				 <class name="Test_Scripts.Scripts_OderProductPage"/>
+  			
+        </classes>
+    </test>
+    
+ </suite>
+ 
