@@ -1,7 +1,5 @@
 package Test_Scripts;
 
-import Test_Data.GlobalVariables;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,6 +9,7 @@ import Page_Object.Object_LogOutPage;
 import Page_Setup.PageSetupBase;
 
 import Page_Utility.ExcelHandle;
+import Test_Data.GlobalVariables;
 public class Scripts_LogInPage extends PageSetupBase{
 	
 Object_LogInPage ObjLogInPage;
@@ -50,14 +49,24 @@ ExcelHandle obj;
 		//Assert.assertTrue(ObjLogin.setLogIn_Wrong_UserName().contains("Tên đăng nhập hoặc mật khẩu không hợp lệ"));
 		//WriExl.setCellData("LogIn", 5, 1,"FAILED");
 		
-		switch (ObjLogin.setLogIn_Wrong_UserName()) {
+		/*switch (ObjLogin.setLogIn_Wrong_UserName()) {
 		case "Tên đăng nhập hoặc mật khẩu không hợp lệ": 		
 			WriExl.setCellData("LogIn", 5, 1,"FAILED");
 			break;
 		default:
 			WriExl.setCellData("LogIn", 5, 1,"NOT START");
 			break;
-		}	
+		}	*/
+		
+		
+		switch (ObjLogin.setLogIn_Wrong_UserName()) {
+		case Test_Data.GlobalVariables.LogInWrong_UserName:		
+			WriExl.setCellData("LogIn", 5, 1,"FAILED");
+			break;
+		default:
+			WriExl.setCellData("LogIn", 5, 1,"NOT START");
+			break;
+		}
 	}
 	
 		//Login Wrong PassWord
