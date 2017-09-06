@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LzaProject" duration-ms="31169" started-at="2017-09-06T04:05:49Z" finished-at="2017-09-06T04:06:20Z">
+    <groups>
+    </groups>
+    <test name="SmokeTest - chrome" duration-ms="31169" started-at="2017-09-06T04:05:49Z" finished-at="2017-09-06T04:06:20Z">
+      <class name="Test_Scripts.Scripts_RegisterPage">
+        <test-method status="PASS" signature="initializeTestBaseSetup(java.lang.String, java.lang.String)[pri:0, instance:Test_Scripts.Scripts_RegisterPage@e25b2fe]" name="initializeTestBaseSetup" is-config="true" duration-ms="11292" started-at="2017-09-06T11:05:49Z" finished-at="2017-09-06T11:06:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.lazada.vn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method status="PASS" signature="Testcase001_Register_Email_Exist()[pri:0, instance:Test_Scripts.Scripts_RegisterPage@e25b2fe]" name="Testcase001_Register_Email_Exist" duration-ms="10190" started-at="2017-09-06T11:06:00Z" finished-at="2017-09-06T11:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase001_Register_Email_Exist -->
+        <test-method status="PASS" signature="Testcase002_Register_PassWorNotMatch()[pri:0, instance:Test_Scripts.Scripts_RegisterPage@e25b2fe]" name="Testcase002_Register_PassWorNotMatch" duration-ms="4960" started-at="2017-09-06T11:06:10Z" finished-at="2017-09-06T11:06:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase002_Register_PassWorNotMatch -->
+        <test-method status="PASS" signature="Testcase003_Register_Valid_Data()[pri:0, instance:Test_Scripts.Scripts_RegisterPage@e25b2fe]" name="Testcase003_Register_Valid_Data" duration-ms="3611" started-at="2017-09-06T11:06:15Z" finished-at="2017-09-06T11:06:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testcase003_Register_Valid_Data -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test_Scripts.Scripts_RegisterPage@e25b2fe]" name="tearDown" is-config="true" duration-ms="1098" started-at="2017-09-06T11:06:19Z" finished-at="2017-09-06T11:06:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test_Scripts.Scripts_RegisterPage -->
+    </test> <!-- SmokeTest - chrome -->
+  </suite> <!-- LzaProject -->
+</testng-results>

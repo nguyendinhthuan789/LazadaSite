@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LzaProject]" parallel="tests">
+  <test name="SmokeTest - chrome(failed)" parallel="tests">
+    <parameter name="os" value="WIN10"/>
+    <parameter name="appURL" value="https://www.lazada.vn"/>
+    <parameter name="version" value="54.0.1"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="Test_Scripts.Scripts_LogInPage">
+        <methods>
+          <include name="initializeTestBaseSetup"/>
+          <include name="Testcase004_Logout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Test_Scripts.Scripts_LogInPage -->
+    </classes>
+  </test> <!-- SmokeTest - chrome(failed) -->
+</suite> <!-- Failed suite [LzaProject] -->
